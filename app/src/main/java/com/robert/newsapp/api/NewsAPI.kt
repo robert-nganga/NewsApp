@@ -1,6 +1,7 @@
-package com.robert.newsapp.ui
+package com.robert.newsapp.api
 
-import com.robert.newsapp.ui.Constants.Companion.API_KEY
+import com.robert.newsapp.models.NewsResponse
+import com.robert.newsapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

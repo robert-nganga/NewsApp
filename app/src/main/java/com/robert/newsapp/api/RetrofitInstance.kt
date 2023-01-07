@@ -1,6 +1,6 @@
-package com.robert.newsapp.ui
+package com.robert.newsapp.api
 
-import com.robert.newsapp.ui.Constants.Companion.BASE_URL
+import com.robert.newsapp.util.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -12,6 +12,7 @@ class RetrofitInstance {
             val logging = HttpLoggingInterceptor()
             logging.setLevel(HttpLoggingInterceptor.Level.BODY)
             val client = OkHttpClient.Builder()
+                .retryOnConnectionFailure(true)
                 .addInterceptor(logging)
                 .build()
             Retrofit.Builder()

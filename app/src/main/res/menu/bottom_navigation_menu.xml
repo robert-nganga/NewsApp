@@ -8,10 +8,10 @@
 
     <item
         android:id="@+id/savedNewsFragment"
-        android:title="Item"
+        android:title="Saved News"
         android:icon="@drawable/ic_baseline_favorite_24"/>
     <item
         android:id="@+id/searchNewsFragment"
-        android:title="Item"
+        android:title="Search News"
         android:icon="@drawable/ic_baseline_search_24"/>
 </menu>

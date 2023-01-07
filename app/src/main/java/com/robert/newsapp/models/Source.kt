@@ -1,4 +1,4 @@
-package com.robert.newsapp.ui
+package com.robert.newsapp.models
 
 data class Source(
     val id: String,
